@@ -1,0 +1,134 @@
+{
+  "superadmin": [
+    {
+      "id": "1",
+      "username": "superadmin",
+      "password": "superadmin123",
+      "email": "superadmin@gmail.com",
+      "role": "superadmin"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "index": 1,
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin",
+      "createdsuperadminuser": "",
+      "isdisable": 1
+    },
+    {
+      "id": "4",
+      "index": 2,
+      "username": "saam",
+      "email": "saam@gmail.com",
+      "password": "saam123",
+      "role": "admin",
+      "createdsuperadminuser": "superadmin",
+      "isdisable": 0
+    },
+    {
+      "id": "5",
+      "username": "vikas",
+      "password": "vikas123",
+      "email": "vikas@gmal.com",
+      "role": "admin",
+      "createdsuperadminuser": "superadmin",
+      "isdisable": 0
+    },
+    {
+      "id": "6",
+      "index": 4,
+      "username": "priyanka",
+      "password": "pri123",
+      "email": "pri@gmail.com",
+      "role": "admin",
+      "createdsuperadminuser": "",
+      "isdisable": 0
+    },
+    {
+      "id": "7",
+      "username": "saad ",
+      "password": "saad123",
+      "email": "saad@gmail.com",
+      "role": "admin",
+      "createdsuperadminuser": "superadmin"
+    },
+    {
+      "id": "8",
+      "username": "raj",
+      "password": "raj123",
+      "email": "raj@gmail.com",
+      "role": "admin",
+      "createdsuperadminuser": "",
+      "isdisable": 0
+    }
+  ],
+  "employee": [
+    {
+      "id": "1",
+      "index": 1,
+      "username": "employee",
+      "email": "employee@gmail.com",
+      "password": "employee123",
+      "role": "employee",
+      "createdsuperadminuser": "",
+      "createdadminuser": "",
+      "isdisable": 1
+    },
+    {
+      "id": "4",
+      "username": "sunil",
+      "password": "sunil123",
+      "email": "sunil@gmail.com",
+      "role": "employee",
+      "createdsuperadminuser": "",
+      "createdadminuser": "Ayushkumar",
+      "isdisable": 0
+    },
+    {
+      "id": "6",
+      "username": "aryan choudhary",
+      "password": "aryan123",
+      "email": "aryan@gmail.com",
+      "role": "employee",
+      "createdsuperadminuser": "superadmin",
+      "createdadminuser": "",
+      "isdisable": 0
+    },
+    {
+      "id": "7",
+      "index": 4,
+      "username": "raju",
+      "password": "raju@123",
+      "email": "raju@gmail.com",
+      "role": "employee",
+      "createdsuperadminuser": "superadmin",
+      "createdadminuser": "",
+      "isdisable": 0
+    },
+    {
+      "id": "8",
+      "index": 5,
+      "username": "testing",
+      "password": "test123",
+      "email": "test@gmail.com",
+      "role": "employee",
+      "createdsuperadminuser": "",
+      "createdadminuser": "admin"
+    },
+    {
+      "id": "9",
+      "index": 6,
+      "username": "tushar ",
+      "email": "tushar@gmail.com",
+      "password": "tushar123",
+      "role": "employee",
+      "createdsuperadminuser": "superadmin",
+      "createdadminuser": "",
+      "isdisable": 0
+    }
+  ]
+}

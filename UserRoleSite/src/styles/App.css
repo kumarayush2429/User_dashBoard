@@ -1,0 +1,88 @@
+@import './form.css';
+@import './sidebar.css';
+@import './loader.css';
+
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a clean base font and background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+}
+
+/* Utility container to keep content centered and readable */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Headings and Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Add consistent spacing between sections */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Optional: Links appearance */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.goBackButton{
+  position: absolute;
+  top: 11%;
+  right: 10px;
+  border: none;
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/*-------------------------------------bootstrap class----------------------------*/
+.col-3{
+  width: 15% !important ;
+}
+
+
+.cMpwUR{
+  white-space: normal !important;
+}
+
+.modal-footer{
+  justify-content: center !important;
+}

@@ -1,0 +1,32 @@
+.sidebar {
+  width: 200px; 
+  height: 100vh;     
+  background-color:#f9f9f9; 
+}
+
+.list-group{
+    list-style: none;
+    padding: 0;
+}
+
+.nav-link.active {
+  background-color: #5b82af;
+  color: white;
+  border-radius: 0px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.nav-link.active:hover{
+  color: white;
+}
+
+
+.list-group li a{
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+

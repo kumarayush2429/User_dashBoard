@@ -1,0 +1,443 @@
+ .form {
+     background-color: #fff;
+     display: block;
+     padding: 1rem;
+     max-width: 400px;
+     border-radius: 0.5rem;
+     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+ }
+
+ .form-title {
+     font-size: 1.25rem;
+     line-height: 1.75rem;
+     font-weight: 600;
+     text-align: center;
+     color: #000;
+ }
+
+ .input-container {
+     position: relative;
+ }
+
+ .input-container input,
+ .form button {
+     outline: none;
+     border: 1px solid #e5e7eb;
+     margin: 8px 0;
+ }
+
+ .input-container input {
+     background-color: #fff;
+     padding: 1rem;
+     padding-right: 3rem;
+     font-size: 0.875rem;
+     line-height: 1.25rem;
+     width: 360px;
+     border-radius: 0.5rem;
+     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+ }
+
+ .input-container span {
+     display: grid;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     place-content: center;
+ }
+
+ .input-container span svg {
+     color: #9CA3AF;
+     width: 1rem;
+     height: 1rem;
+ }
+
+ .submit {
+     display: block;
+     padding-top: 0.75rem;
+     padding-bottom: 0.75rem;
+     padding-left: 1.25rem;
+     padding-right: 1.25rem;
+     background-color: #4F46E5;
+     color: #ffffff;
+     font-size: 0.875rem;
+     line-height: 1.25rem;
+     font-weight: 500;
+     width: 100%;
+     border-radius: 0.5rem;
+     text-transform: uppercase;
+ }
+
+ .signup-link {
+     color: #6B7280;
+     font-size: 0.875rem;
+     line-height: 1.25rem;
+     text-align: center;
+ }
+
+ .signup-link a {
+     text-decoration: underline;
+ }
+
+ .signup {
+     text-align: center;
+     font-size: 0.75rem;
+     line-height: 1rem;
+     color: rgba(156, 163, 175, 1);
+     font-size: 14px;
+ }
+
+ .signup a {
+     text-decoration: none;
+ }
+
+
+
+
+ /******Dashboard card********************************************/
+ section.card {
+     position: relative;
+     width: 280px;
+     height: 280px;
+     background-color: #f2f2f2;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     perspective: 1000px;
+     transition: transform 0.4s ease, background-color 0.4s ease;
+     will-change: transform;
+ }
+
+ .card svg {
+     fill: #5b82af;
+     transition: transform 0.6s ease, opacity 0.6s ease;
+     border-radius: 3px;
+     z-index: 1;
+     width: 250px;
+     height: 150px;
+ }
+
+ .card:hover {
+     background-color: #f2f2f2;
+ }
+
+ .card__content {
+     color: #000;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     padding: 0px;
+     box-sizing: border-box;
+     background-color: #f2f2f2;
+     transform: rotateX(-90deg);
+     transform-origin: bottom;
+     transition: transform 0.6s ease;
+     z-index: 2;
+ }
+
+ .card:hover .card__content {
+     transform: rotateX(0deg);
+ }
+
+ .card:hover svg {
+     transform: scale(0.6);
+     opacity: 0;
+ }
+
+ .card__title {
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ .card__content ul{
+    height: 120px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+ }
+
+
+
+ /************************************   Register Form  **********************************************************/
+ .modern-form {
+     --primary: #3b82f6;
+     --primary-dark: #2563eb;
+     --primary-light: rgba(59, 130, 246, 0.1);
+     --success: #10b981;
+     --text-main: #1e293b;
+     --text-secondary: #64748b;
+     --bg-input: #f8fafc;
+
+     position: relative;
+     width: 100%;
+     height: 450px;
+     padding: 24px;
+     background: #ffffff;
+     border-radius: 16px;
+     box-shadow:
+         0 4px 6px -1px rgba(0, 0, 0, 0.5),
+         0 2px 4px -2px rgba(0, 0, 0, 0.05),
+         inset 0 0 0 1px rgba(148, 163, 184, 0.1);
+     font-family:
+         system-ui,
+         -apple-system,
+         sans-serif;
+ }
+
+ .form-title {
+     font-size: 26px;
+     font-weight: 600;
+     color: var(--text-main);
+     margin: 0 0 30px;
+     text-align: center;
+     letter-spacing: -0.01em;
+     text-decoration: none;
+ }
+
+ .input-group {
+     margin-bottom: 24px;
+ }
+
+ .input-wrapper {
+     position: relative;
+     display: flex;
+     align-items: center;
+     width: 100%;
+ }
+
+ .form-input {
+     width: 100%;
+     height: 40px;
+     padding: 0 36px;
+     font-size: 14px;
+     border: 1px solid #e2e8f0;
+     border-radius: 10px;
+     background: var(--bg-input);
+     color: var(--text-main);
+     transition: all 0.2s ease;
+ }
+
+ .form-input::placeholder {
+     color: var(--text-secondary);
+ }
+
+ .input-icon {
+     position: absolute;
+     left: 12px;
+     width: 16px;
+     height: 16px;
+     color: var(--text-secondary);
+     pointer-events: none;
+ }
+
+ .password-toggle {
+     position: absolute;
+     right: 12px;
+     display: flex;
+     align-items: center;
+     padding: 4px;
+     background: none;
+     border: none;
+     color: var(--text-secondary);
+     cursor: pointer;
+     transition: all 0.2s ease;
+ }
+
+ .eye-icon {
+     width: 16px;
+     height: 16px;
+ }
+
+ .submit-button {
+     position: relative;
+     width: 100%;
+     height: 40px;
+     margin-top: 15px;
+     background: var(--primary);
+     color: white;
+     border: none;
+     border-radius: 10px;
+     font-size: 14px;
+     font-weight: 500;
+     cursor: pointer;
+     overflow: hidden;
+     transition: all 0.2s ease;
+ }
+
+ .button-glow {
+     position: absolute;
+     inset: 0;
+     background: linear-gradient(90deg,
+             transparent,
+             rgba(255, 255, 255, 0.2),
+             transparent);
+     transform: translateX(-100%);
+     transition: transform 0.5s ease;
+ }
+
+ .form-footer {
+     margin-top: 20px;
+     text-align: center;
+     font-size: 14px;
+ }
+
+ .login-link {
+     color: var(--text-secondary);
+     text-decoration: none;
+     transition: all 0.2s ease;
+ }
+
+ .login-link span {
+     color: var(--primary);
+     font-weight: 500;
+ }
+
+ /* Hover & Focus States */
+ .form-input:hover {
+     border-color: #cbd5e1;
+ }
+
+ .form-input:focus {
+     outline: none;
+     border-color: var(--primary);
+     background: white;
+     box-shadow: 0 0 0 4px var(--primary-light);
+ }
+
+ .password-toggle:hover {
+     color: var(--primary);
+     transform: scale(1.1);
+ }
+
+ .submit-button:hover {
+     background: var(--primary-dark);
+     transform: translateY(-1px);
+     box-shadow:
+         0 4px 12px rgba(59, 130, 246, 0.25),
+         0 2px 4px rgba(59, 130, 246, 0.15);
+ }
+
+ .submit-button:hover .button-glow {
+     transform: translateX(100%);
+ }
+
+ .login-link:hover {
+     color: var(--text-main);
+ }
+
+ .login-link:hover span {
+     color: var(--primary-dark);
+ }
+
+ /* Active States */
+ .submit-button:active {
+     transform: translateY(0);
+     box-shadow: none;
+ }
+
+ .password-toggle:active {
+     transform: scale(0.9);
+ }
+
+ /* Validation States */
+ .form-input:not(:placeholder-shown):valid {
+     border-color: var(--success);
+ }
+
+ .form-input:not(:placeholder-shown):valid~.input-icon {
+     color: var(--success);
+ }
+
+ /* Animation */
+ @keyframes shake {
+
+     0%,
+     100% {
+         transform: translateX(0);
+     }
+
+     25% {
+         transform: translateX(-4px);
+     }
+
+     75% {
+         transform: translateX(4px);
+     }
+ }
+
+ .form-input:not(:placeholder-shown):invalid {
+     border-color: #ef4444;
+     animation: shake 0.2s ease-in-out;
+ }
+
+ .form-input:not(:placeholder-shown):invalid~.input-icon {
+     color: #ef4444;
+ }
+
+
+ .input-group-dual {
+     display: flex;
+     gap: 12px;
+ }
+
+ .input-wrapper.username-wrapper {
+     flex: 1;
+     position: relative;
+ }
+
+ .input-wrapper.role-wrapper {
+     flex: 0.7;
+ }
+
+ .input-wrapper select.form-input {
+     padding-left: 12px;
+     padding-right: 12px;
+ }
+
+
+ /**********************************  Toggle button on form ***************************************************************/
+
+.switch {
+  --a: 0.5s ease-out;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  height: 1em;
+  border-radius: 2em;
+  box-shadow: 0 0 0 0.66em #aaa;
+  aspect-ratio: 212.4992/84.4688;
+  background-color: #aaa;
+}
+
+/* Hide default HTML checkbox */
+#check {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch svg {
+  height: 100%;
+}
+
+.switch svg path {
+  color: #fff;
+  stroke-width: 16;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 136 224;
+  transition:
+    all var(--a),
+    0s transform;
+  transform-origin: center;
+}
+
+#check:checked ~ .switch svg path {
+  stroke-dashoffset: 180;
+  transform: scaleY(-1);
+}
